@@ -1,2 +1,2 @@
-# JS-Bouncing-balls-game
+# JS-Bounce-balls-game
 Simple JavaScript Game
