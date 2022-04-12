@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_building_practice -->
+<!-- https://mixkit.co/free-sound-effects/notification -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Madballs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Madballs</h1>
+    <p class="legend">
+        Use Mouse or Arrow keys to move.<br>
+        Press Left mouse button to shot a ball.<br>
+        Press Enter to enable persistent mode.<br>
+        In this mode you will won less points.<br>
+        Press ESC to begin.<br>
+    </p>
+    <p class="statistic">
+        Stage: <span id="stage-indicator">0</span><br>
+        Stage balls: <span id="stage-balls">0</span><br>
+        Caught: <span id="stage-caught-balls">0</span><br>
+        Total: <span id="total-caught-balls">0</span><br>
+        Score: <span id="score-indicator">0</span><br>
+        <span id="mode-indicator">Mode</span> <span id="score-won-indicator">0</span><br>
+    </p>
+    <div class="message-game-over">
+        <h2>Game Over</h2>
+        <p class="total-sore-label">Your sore:&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="total-sore">0</span>
+        </p>
+        <a href="./"><button>Restart</button></a>
+        <p><small><a target="blank"
+                    href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Adding_bouncing_balls_features">Based
+                    on MDN's Bouncing balls</a></small></p>
+    </div>
+    <canvas></canvas>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
