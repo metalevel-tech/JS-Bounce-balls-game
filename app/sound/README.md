@@ -7,9 +7,12 @@
 * https://samplefocus.com/samples?utf8=%E2%9C%93&search=game+voice
 
 # Commands
+[**Changing (reducing) the quality of an ogg file?**](https://askubuntu.com/questions/1118939/changing-reducing-the-quality-of-an-ogg-file)
+
+```bash
+ffmpeg -y -loglevel "error" -t 30 -i Garbage\ -07-\ Push\ It.mp3 -acodec libmp3lame  -ab 88k garbage-version.2.0-push.it.mp3
+```
 
 ```bash
 ffmpeg -i in.mp3 -af "volume=0.25" out.mp3
 ```
-
-* [Changing (reducing) the quality of an ogg file?](https://askubuntu.com/questions/1118939/changing-reducing-the-quality-of-an-ogg-file)
