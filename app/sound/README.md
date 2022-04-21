@@ -11,3 +11,5 @@
 ```bash
 ffmpeg -i in.mp3 -af "volume=0.25" out.mp3
 ```
+
+* [Changing (reducing) the quality of an ogg file?](https://askubuntu.com/questions/1118939/changing-reducing-the-quality-of-an-ogg-file)
