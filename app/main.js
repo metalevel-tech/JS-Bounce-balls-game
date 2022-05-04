@@ -424,7 +424,7 @@ const gameInterface = {
 const game = {
     balls: [],
     ballsRemoved: [],
-    stageBalls: 5,
+    stageBalls: 9,
     stageCaughtBalls: 0,
     totalCaughtBalls: 0,
     minRadius: 10,
@@ -438,7 +438,7 @@ const game = {
     score: 0,
     lastScore: 0,
     mode: 'demo',
-    maxStages: 2
+    maxStages: 5
 }
 
 const sound = soundFX(game);
