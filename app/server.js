@@ -5,6 +5,8 @@ let MongoClient = require('mongodb').MongoClient;
 let bodyParser = require('body-parser');
 let app = express();
 
+const port = 18001;
+
 app.use(bodyParser.urlencoded({
     extended: true
 }));
@@ -18,6 +20,6 @@ app.get('/', function (req, res) {
 app.use('/sound', express.static(path.join(__dirname, 'sound')));
 app.use('/', express.static(path.join(__dirname, '')));
 
-app.listen(8001, function () {
-    console.log("app listening on port 8001!");
+app.listen(port, function () {
+    console.log(`Bounce balls app listening on port ${port}!`);
 });
