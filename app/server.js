@@ -1,11 +1,9 @@
 let express = require('express');
 let path = require('path');
-let fs = require('fs');
-let MongoClient = require('mongodb').MongoClient;
 let bodyParser = require('body-parser');
-let app = express();
 
-const port = 18001;
+let app = express();
+const port = 48001;
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -17,7 +15,7 @@ app.get('/', function (req, res) {
 });
 
 // https://expressjs.com/en/starter/static-files.html
-app.use('/sound', express.static(path.join(__dirname, 'sound')));
+// app.use('/sound', express.static(path.join(__dirname, 'sound')));
 app.use('/', express.static(path.join(__dirname, '')));
 
 app.listen(port, function () {

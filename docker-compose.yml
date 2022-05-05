@@ -1,0 +1,10 @@
+# docker run -p 18001:3000 bounce-balls -d
+# docker-compose up -d
+# docker-compose down
+version: '3.9'
+services:
+  app:
+    build: .
+    image: "node:18-alpine"
+    ports:
+      - "48001:48001"

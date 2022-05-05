@@ -20,7 +20,6 @@ class Shape {
         this.velY = velY;
     }
 }
-
 class EvilCircle extends Shape {
     constructor(x, y, radius, velLimit) {
         super(x, y, velLimit, velLimit);
@@ -28,7 +27,7 @@ class EvilCircle extends Shape {
         this.radius = radius;
         this.active = false;
         
-        // Keyboard AWSD/Enter=begin
+        // Keyboard A-W-S-D/Enter=begin
         window.addEventListener('keydown', (e) => {
             if (game.mode === 'demo') return;
             switch (true) {
