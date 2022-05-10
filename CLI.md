@@ -33,6 +33,11 @@ docker-prune.sh
 ## [PM2](https://www.npmjs.com/package/pm2) service for the app
 
 ```bash
+cd app/
+npm install
+```
+
+```bash
 pm2 start 'npm run watch' --name 'bballs'
 pm2 save
 ```
