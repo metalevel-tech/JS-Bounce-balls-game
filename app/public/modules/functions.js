@@ -16,7 +16,7 @@ function formatNumber(number){
 
 // function to play sound
 function soundFX(game) {
-    const path = './sound/';
+    const path = './assets/sound/';
     const extension = '.mp3';
 
     const channels = {
