@@ -1,7 +1,3 @@
-let express = require('express');
-let path = require('path');
-let bodyParser = require('body-parser');
-
 const app = express();
 const appPort = 48001;
 const appName = 'Bounce balls';
