@@ -1,16 +1,18 @@
 {
-  "name": "js-bounce-balls-game",
+  "name": "exc-js-bounce-balls-game",
+  "homepage": "https://metalevel-tech.github.io/exc-js-bounce-balls-game",
   "version": "1.0.0",
   "description": "Simple JavaScript game that uses the Canvas API",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "supervisor server.js"
+    "watch": "supervisor server.js",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metalevel-tech/js-bounce-balls-game.git"
+    "url": "git+https://github.com/metalevel-tech/exc-js-bounce-balls-game.git"
   },
   "keywords": [
     "javascript",
@@ -20,14 +22,14 @@
   "author": "Spas Z. Spasov",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/metalevel-tech/js-bounce-balls-game/issues"
+    "url": "https://github.com/metalevel-tech/exc-js-bounce-balls-game/issues"
   },
-  "homepage": "https://bballs.metalevel.tech/github",
   "dependencies": {
     "body-parser": "^1.20.0",
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "supervisor": "^0.12.0"
   }
 }
