@@ -1,0 +1,119 @@
+html,
+body {
+    margin: 0;
+}
+
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: inherit;
+    position: relative;
+}
+
+body * {
+    user-select: none;
+}
+
+h1 {
+    font-size: 2.4rem;
+    letter-spacing: -1px;
+    position: absolute;
+    margin: 0;
+    top: -4px;
+    right: 5px;
+    letter-spacing: 1.5px;
+    color: transparent;
+    text-shadow: 0 0 4px white;
+    /* cursor: pointer; */
+}
+
+h2 {
+    font-size: 3.4rem;
+    margin: .2em auto .1em;
+    letter-spacing: 3px;
+    padding-left: 10px;
+}
+
+h2, .total-sore-label, .total-sore {
+    font-family: 'Faster One', cursive;
+}
+
+.total-sore {
+    font-size: 2rem;
+}
+
+.legend,
+.statistic{
+    position: absolute;
+    margin: 0;
+    top: 35px;
+    right: 5px;
+    color: white;
+    line-height: 1.75em;
+    text-align: right;
+    font-family: cursive;
+    opacity: .6;
+    /* cursor: pointer; */
+}
+.statistic {
+    display: none;
+}
+
+
+.statistic>span {
+    display: inline-block;
+    width: 5.5em;
+    margin-right: .3em;
+}
+
+#mode-indicator {
+    width: auto;
+    padding: 0 6px;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-right: 0;
+}
+
+#mode-indicator.fire-mode {
+    width: auto;
+    color: red;
+    background-color: rgb(240, 225, 9);
+    border: 1px solid rgb(240, 225, 9);
+}
+
+.info,
+canvas {
+    cursor: crosshair;
+}
+
+button {
+    cursor: pointer;
+}
+
+.message-game-over {
+    position: absolute;
+    border-radius: 2px;
+    background-color: #ffe4a0;
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    box-shadow: -8px 8px 8px 0px #ffeacc69;
+    text-align: center;
+    display: none;
+}
+
+.message-game-over .credits {
+    color: #ffc000; /*#bb8c00;*/
+}
+
+.message-game-over .credits a {
+    color: #ffa500; /*#ffc000;*/
+    text-decoration: none;
+}
